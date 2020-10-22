@@ -1,0 +1,220 @@
+/* Estilo página index.html */
+
+
+body{
+    margin: 10px 0;
+    background-image: url(https://img.elo7.com.br/product/main/1987A04/papel-de-parede-listrado-vertical-32-papel-de-parede-para-banheiro.jpg);
+    background-size: cover;
+    
+    background-size: 100%;
+    position: relative;
+    overflow: auto;
+    
+}
+
+
+
+#menu{
+    
+    position: absolute;
+    left: 50%;
+    height: 32px;
+    width: 266px;
+    padding: 0px 0px 0px 0px ;
+    text-align: center;
+    transform: translateX(-50%);
+    border-radius: 15px;
+    background-color: rgb(28, 119, 99);
+    box-shadow: 2px 5px 5px  black;
+    
+   
+}
+#menu li{
+    display: inline;
+    font-size: 20px;
+    
+    
+    
+    
+}
+#menu li a{
+    
+    
+    width: 100%;
+    margin: 2px;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    border-radius: 15px;
+    top: 4px;
+    padding: 5px 8px 5px 10px;
+      
+}
+
+#menu li a:hover{
+    color: rgb(215, 241, 68);
+}
+#menu  li a:hover, #menu  li a.active{
+    color:burlywood;
+    background-color: rgb(152, 230, 213);
+}
+
+.justify{
+    text-align: justify;
+}
+.texto{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+.center{
+    text-align: center;
+    
+}
+
+.titulo{
+   
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center; 
+    padding-top: 70px;
+    color:#ffff ;
+}
+.sub-titulo{
+    color: white;
+}
+.fundo{
+    background-color: rgba(172, 212, 236, 0.514);
+    
+}
+.container{
+   
+    width: 960px;
+    border : 2px solid #e95a32;
+    padding: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    transform: translateX(15%);
+    box-shadow: 0px 5px 8px 0px black;
+    
+}
+.image{
+    box-shadow: 1px 5px 9px 1px black;
+    padding: 1px;
+
+}
+
+.p-30{
+    padding: 30px;
+}
+.br-50{
+border-radius: 50%;
+}
+.video{
+    display: flex;
+   justify-content: center;
+
+   
+}
+.tm-social{
+    width: 30px;
+    height: 30px;
+    padding: 0px 15px 0px 5px ;
+    
+}
+
+.rodape{
+    padding-top: 5px;
+    padding-bottom: auto;
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+/* Estilo página contato.html */
+.ml-50{
+    margin-left: 50px;
+}
+.ml-30{
+    margin-left: 30px;
+}
+.botao{
+    width: 70px;
+    height: 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    color: white;
+    background-color: cadetblue;
+    box-shadow: 2px 5px 9px black;
+}
+.botao:hover{
+    color: rgb(215, 241, 68);
+    background-color: lightslategray;
+}
+
+.map{
+    padding-bottom: 25px;
+    padding-right: 50px;
+    
+}
+#label{
+    margin-left: 10px;
+    border-radius: 8px;
+    width: 250px;
+    height: 20px;
+}
+#txtarea{
+    border-radius: 8px;
+}
+
+
+/* Estilo página cadastrar.html */
+
+
+.pb-20{
+    padding-bottom: 5px;
+}
+#radio{
+    margin-left: 20px;
+    height: 15px;
+}
+.btncad{
+    width: 100px;
+    height: 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    color: white;
+    background-color: cadetblue;
+    box-shadow: 2px 5px 9px black;
+}
+.btncad:hover{
+    color: rgb(215, 241, 68);
+    background-color: lightslategray;
+}
+
+.ml-10{
+    margin-left: 10px;
+}
+.mb-20{
+    
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#estilo-select{
+    margin-left: 10px;
+    width: 95px;
+    height: 22px;
+    border-radius: 5px;
+    appearance: none;
+   border: 1px solid #ddd;
+    
+}
