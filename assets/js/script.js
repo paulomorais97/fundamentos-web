@@ -5,11 +5,28 @@ let nome = window.document.getElementById('nome')
 let email = window.document.getElementById('email')
 let assunto = window.document.getElementById('assunto')
 let descricao = window.document.getElementById('descricao')
+ let nomeOk = false
+ let emailOk = false
+ let assuntoOk = false
+ let descricaoOk = false
+ let mapa = window.document.querySelector('#mapa') 
+ let face = window.document.querySelector('#face')
+ let insta = window.document.querySelector('#insta')
+ let linked = window.document.querySelector('#linked')
+ let git = window.document.querySelector('#git')
+ let whats = window.document.querySelector('#whats')
+
+ //
+ let usuario = window.document.getElementById('usuario')
+let senha = window.document.getElementById('senha')
+/////
 
 
 nome.style.width = '100%'
 email.style.width = '100%'
 assunto.style.width = '100%'
+
+
 
 function validaNome(){
     let txtNome = document.querySelector('#txtNome')
@@ -20,6 +37,7 @@ function validaNome(){
     else{
         txtNome.innerHTML = 'Nome Válido'
         txtNome.style.color = 'green'
+        let nomeOk = true
     }
 }
 
@@ -33,6 +51,7 @@ function validaEmail(){
     else{
         txtEmail.innerHTML = 'E-mail Válido'
         txtEmail.style.color = ' green'
+        let emailOk = false
     }
 }
 
@@ -46,48 +65,47 @@ function validaAssunto(){
     else{
         txtAssunto.innerHTML = 'Assunto Válido'
         txtAssunto.style.color = 'green'
+        assuntoOk = true
     }
 }
 
 function validaDescricao(){
     let txtDescricao = document.querySelector('#txtDescricao')
 
-    if(descricao.value.length > 500){
+    if(descricao.value.length >= 500){
         txtDescricao.innerHTML = 'Limite máximo de caracteres atingido'
         txtDescricao.style.color = 'red'
+        txtDescricao.style.display = 'block'
     }
     else{
-        txtDescricao.innerHTML = ' '
+        txtDescricao.style.display = 'none'
+        assuntoOk = true
     }
     
 }
 
 
 function enviarMensagem(){
-    
-        alert('Mensagem enviada!')
-    
-}
 
-
-
-/*
-CADASTRO
-*/
-
-let emailCad = document.getElementById('emailCad')
-let usuario = document.getElementById('usuario')
-let senha = document.getElementById('senha')
-
-function validaEmailCad(){
-    let txtEmailCad = document.querySelector('#txtEmailCad')
-
-    if(emailCad.value.indexOf('@') == -1 || emailCad.value.indexOf('.')== -1 ){
-        txtEmailCad.innerHTML = 'E-mail Inválido'
-        txtEmailCad.style.color = 'red'
+    if( nomeOk==true && emailOk ==true && assuntoOk ==true && descricaoOk == true){
+        alert('Mensagem enviada com sucesso!')
     }
     else{
-        txtEmailCad.innerHTML = 'E-mail Válido'
-        txtEmailCad.style.color = 'green'
+        alert('Preencha os campos corretamente antes de enviar!')
     }
+         
 }
+
+
+function mapaZoom(){
+mapa.style.width = '700px'
+mapa.style.height = '350px'
+
+}
+
+function mapaNormal(){
+    mapa.style.width = '400px'
+    mapa.style.height = '250px'
+}
+
+

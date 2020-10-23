@@ -3,79 +3,105 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Cadastro</title>
+        <title>Cadastre-se</title>
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
-        <ul id="menu">
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li>
-               <a href="contato.html">Contato</a>
-            </li>
-            <li>
-                <a class="active" href="cadastrar.html">Cadastro</a>
-            </li>
-            
-        </ul>
-        <h1 class="titulo">Cadastre-se</h1>
-        <div class=" container fundo">
-
-            
+        <div class="cabecalho">
+        
+            <div class=" login">
                 <form >
-                    <label  for="email"><b>Email</b></label>
-                        <input class="label" type="text" id="emailCad">
-                        <hr>
-                    <label   for="usuario"><b>Usuario</b></label>
-                        <input class="label" type="text" id="usuario" onkeyup='validaEmailCad()'>
-                        <div id = "txtEmailCad"></div>
-                        <hr>
-                    <label  for="senha"><b>Senha</b></label>
-                        <input class="label" type="password" id="senha" size="8">
-                        <br>
-                        <hr>
-                     
-                    
-                  <button class="btncad ml-10 mb-20" type="submit" > Cadastrar</button> 
-                  <button class="botao ml-10 mb-20" type="reset" >Limpar</button>
-        
-                </form>
-            
+                   <label for="usuario"><b>Usuario</b></label>
+                   <input class="label" type="text" id="usuario" onkeyup='validaUsuario()' >
+                
+                   <div id="txtUsuario"></div>
+                   
+                        <hr>                    
+                        <label  for="senha"><b>Senha</b></label>
+                       <input class="label" type="password" id="senha" onkeyup='validaSenha()' >
+                       <div id="txtSenha"></div>
+                       <hr>
+                       <div class="btn centralizar">
+                        <button class="btn-cabecalho " type="submit" > <b>Login</b></button> 
+                 
+                        
 
+                     </div>
+               </form> 
         </div>
+    </div>
+    <ul id="menu">
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+        <li>
+           <a href="contato.html">Contato</a>
+        </li>
+
+    </ul>
+        <h1 class="titulo center">Crie sua conta</h1>
+        <div class=" container fundo">
+                 <form>
+                    <label  for="nomeCad"><b>Nome Completo</b></label>
+                    <input class="label" type="text" id="nomeCad" onkeyup='validaNomeCad()' >
+                    <div id="txtNomeCad"></div>
+                    <hr>
+                    <label for="usuarioCad"><b>Usuario</b></label>
+                    <input class="label" type="text" id="usuarioCad" onkeyup='validaUsuarioCad()' >
+                    <div id="txtUsuarioCad"></div>
+                    <hr>                    
+                    <label  for="emailCad"><b>E-mail</b></label>
+                    <input class="label" type="text" id="emailCad" onkeyup='validaEmailCad()' >
+                    <div id="txtEmailCad"></div>
+                    <hr>
+                    <label  for="senhaCad"><b>Senha</b></label>
+                    <input class="label" type="password" id="senhaCad" onkeyup='validaSenhaCad()' >
+                    <div id="txtSenhaCad"></div>
+                    <hr>
+                    <label class=" texto"  for="sexo"><b>Sexo:</b></label>
+                    
+                    <input id="masculino" type="radio" name="sexo" value="M"><b>Masculino </b>
+                    <input id="feminino" type="radio" name="sexo" value="F"><b>Feminino</b>
+                    <br>
+                    <hr>
+                    <button class="botao  direct" type="submit" onclick='criarConta()'>
+                        <a class="direct" href="index.html">Criar Conta </a>
+                        
+                    </button>
+                </form>
+     </div>
         
-
+        <hr>
         <footer >
-            <hr>
-            <div class="rodape">
+           
+            <div class="autoral">
                 <a href="https://www.facebook.com/profile.php?id=100002467170675&sk=about&viewas=100000686899395" target="_blank">
-                    <img class="tm-social p-30" src="assets/facebook.png" alt="Logo do Facebook">
+                    <img class="icones " src="assets/facebook.png" alt="Logo do Facebook">
                 </a>
-
+        
                 <a href="https://www.instagram.com/paulo__moraiis/" target="_blank">
-                    <img class="tm-social p-30" src="assets/instagram.png" alt="Logo do Instagram">
+                    <img class="icones " src="assets/instagram.png" alt="Logo do Instagram">
                 </a>
                
                 <a href="https://www.linkedin.com/in/paulo-morais-2aab41a1/" target="_blank" >
-                    <img class="tm-social p-30" src="assets/linkedin.png" alt="Logo do LinkedIn">
+                    <img class="icones " src="assets/linkedin.png" alt="Logo do LinkedIn">
                 </a>
-
+        
                 <a href="https://github.com/paulomorais97" target="_blank">
-                    <img class="tm-social p-30" src="assets/github.png" alt="Logo do GitHub">
-
+                    <img class="icones " src="assets/github.png" alt="Logo do GitHub">
+        
                 </a>
                 <a href=" https://api.whatsapp.com/send?phone=5511959150238" target="_blank">
-
-                    <img class="tm-social p-30" src="assets/whatsapp.png" alt="Logo do WhatsApp">
+        
+                    <img class="icones " src="assets/whatsapp.png" alt="Logo do WhatsApp">
                 </a>
                 
             </div>
-
-            <p class="rodape">
+        
+            <p class="autoral">
              Todos os direito reservados para: Paulo Morais &copy;
             </p>
         </footer>
-        <script src="assets/js/script.js"></script>
+        <script src="assets/js/script2.js"></script>
     </body>
 </html> 

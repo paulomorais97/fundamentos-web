@@ -9,26 +9,54 @@
     <body>
         
 
-            <ul id="menu">
-                <li>
-                    <a class="active" href="index.html">Home</a>
-                </li>
-                <li>
-                   <a href="contato.html">Contato</a>
-                </li>
-                <li>
-                    <a href="cadastrar.html">Cadastro</a>
-                </li>
+        <div class="cabecalho">
+        
+            <div class=" login">
+                <form >
+                   <label for="usuario"><b>Usuario</b></label>
+                   <input class="label" type="text" id="usuario" onkeyup='validaUsuario()' >
                 
-            </ul>
+                   <div id="txtUsuario"></div>
+                   
+                   <hr>                    
+                   <label  for="senha"><b>Senha</b></label>
+                       <input class="label" type="password" id="senha" onkeyup='validaSenha()' >
+                       <div id="txtSenha"></div>
+                       <hr>
+                       <div class="btn">
+                        <button class="btn-cabecalho " type="submit" > <b>Login</b></button> 
+                 
+                        <button  class="  btn-cabecalho "type="submit">
+                       <a class="direct " href="cadastrar.html"><b>Criar Conta</b></a>
+                        </button>
+                       </div>
+                 
+                 
+       
+               </form>
+           
+               
+       </div>
+    </div>
+    <ul id="menu">
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+        <li>
+           <a href="contato.html">Contato</a>
+        </li>
         
         
-        <h2 class="titulo">Sobre mim!</h2>
+    </ul>
+            
+        
+        <br>
 
-        <div class="container fundo">
-            <div class="p-30">
-
-                <p class="justify texto">
+        <div class="container ">
+            
+            <div class="paragrafo">
+                <h2 class="titulo center">Sobre mim!</h2>
+                <p class="texto">
                     Mussum Ipsum, cacilds vidis litro abertis. Suco de cevadiss, 
                     é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.
                      Detraxit consequat et quo num tendi nada. Praesent malesuada urna nisi, 
@@ -36,7 +64,7 @@
                      deitado sem dormir, sentado sem cochilar e fazendo pose.
         
                   </p>
-                  <p class="justify texto">
+                  <p class="texto">
                      Quem num gosta di mé, boa gentis num é. Copo furadis é disculpa de bebadis, 
                      arcu quam euismod magna. Suco de cevadiss deixa as pessoas mais interessantis.
                     Admodum accumsan disputationi eu sit. Vide electram sadipscing et per.
@@ -45,15 +73,15 @@
             </div>
     
             <div>
-                    <img class="br-50 image" width="560" height="300" src="assets/paisagem.jpg" alt="Foto do criador">
+                    <img class="image"  src="assets/paisagem.jpg" alt="Foto do criador">
             </div>
             
     
         </div>
         <hr>
-        <h2 class="titulo">Vídeo favorito!</h2>
+        <h2 class="titulo center">Vídeo favorito!</h2>
         <div class="container fundo p-30" >
-            <div class="justify texto p-30">
+            <div class="  texto p-30">
                 <h4 class="texto sub-titulo">Thomas Shelby - O Rei da Pisadinha</h4>
                 <p >
                     Quem num gosta di mé, boa gentis num é. Copo furadis é disculpa de bebadis, 
@@ -62,38 +90,38 @@
                </p>
             </div>
             
-            <div class="br-50 p-30">
+            <div >
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/uOoohHrdrCo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
-
+        <hr >
         <footer >
-            <hr>
-            <div class="rodape">
+           
+            <div class="autoral">
                 <a href="https://www.facebook.com/profile.php?id=100002467170675&sk=about&viewas=100000686899395" target="_blank">
-                    <img class="tm-social p-30" src="assets/facebook.png" alt="Logo do Facebook">
+                    <img class="icones " src="assets/facebook.png" alt="Logo do Facebook">
                 </a>
-
+        
                 <a href="https://www.instagram.com/paulo__moraiis/" target="_blank">
-                    <img class="tm-social p-30" src="assets/instagram.png" alt="Logo do Instagram">
+                    <img class="icones " src="assets/instagram.png" alt="Logo do Instagram">
                 </a>
                
                 <a href="https://www.linkedin.com/in/paulo-morais-2aab41a1/" target="_blank" >
-                    <img class="tm-social p-30" src="assets/linkedin.png" alt="Logo do LinkedIn">
+                    <img class="icones " src="assets/linkedin.png" alt="Logo do LinkedIn">
                 </a>
-
+        
                 <a href="https://github.com/paulomorais97" target="_blank">
-                    <img class="tm-social p-30" src="assets/github.png" alt="Logo do GitHub">
-
+                    <img class="icones " src="assets/github.png" alt="Logo do GitHub">
+        
                 </a>
                 <a href=" https://api.whatsapp.com/send?phone=5511959150238" target="_blank">
-
-                    <img class="tm-social p-30" src="assets/whatsapp.png" alt="Logo do WhatsApp">
+        
+                    <img class="icones " src="assets/whatsapp.png" alt="Logo do WhatsApp">
                 </a>
                 
             </div>
-
-            <p class="rodape">
+        
+            <p class="autoral">
              Todos os direito reservados para: Paulo Morais &copy;
             </p>
         </footer>
