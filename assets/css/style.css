@@ -78,6 +78,7 @@ body{
     text-align: center; 
     padding-top: 70px;
     color:#ffff ;
+   
 }
 .sub-titulo{
     color: white;
@@ -165,13 +166,11 @@ border-radius: 50%;
     padding-right: 50px;
     
 }
-#label{
+.label{
     margin-left: 10px;
     border-radius: 8px;
-    width: 250px;
-    height: 20px;
 }
-#txtarea{
+.txtarea{
     border-radius: 8px;
 }
 
@@ -187,8 +186,7 @@ border-radius: 50%;
     height: 15px;
 }
 .btncad{
-    width: 100px;
-    height: 30px;
+    
     font-size: 18px;
     border-radius: 5px;
     color: white;

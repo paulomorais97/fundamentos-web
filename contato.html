@@ -29,19 +29,24 @@
 
     <div class="ml-30" >
         <form >
-            <label class="texto" for="name"><b>Nome</b></label>
-            <input  type="text" id="label">
+            <label  for="nome"><b>Nome</b></label>
+            <input class=" label" type="text" id="nome" onkeyup='validaNome()'>
+            <div id="txtNome"></div>
             <br>
+            <label  for="email"><b>Email</b></label>
+            <input class="label" type="text" id="email" onkeyup='validaEmail()'>
+            <div id="txtEmail"></div>
             <br>
-            <label class="texto" for="email"><b>Email</b></label>
-            <input type="text" id="label">
+            <label  for="assunto"><b>Assunto</b></label>
+            <input class="label" type="text" id="assunto" onkeyup="validaAssunto()">
+            <div id="txtAssunto"></div>
             <br>
+            <label  for="descricao"><b>Descrição</b></label><br>
+            <textarea class=" txtarea" name="descricao" id="descricao" cols="60" rows="10" onkeyup="validaDescricao()"></textarea>
+            <div id="txtDescricao"></div>
             <br>
-            <label class="texto" for="txtarea"><b>Assunto</b></label><br>
-            <textarea  name="assunto" id="txtarea" cols="60" rows="10"></textarea>
-            <br>
-            <br>
-            <button class="botao"><b>Enviar</b></button>
+            <button class="botao ml-10 mb-20" id="enviar" onclick='enviarMensagem()'><b>Enviar</b></button>
+            <button class="botao ml-10 mb-20" type="reset" >Limpar</button>
 
         </form>
 
@@ -51,8 +56,7 @@
         <p class="texto"><b>R. Alexandre Davidenko, 497</b> </p> 
         <p class="texto"><b>Cidade Tiradentes</b></p>
         <p class="texto"> <b>São Paulo - SP</b></p>
-        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227471.14543926078!2d-46.6465372267441!3d-23.518697869387218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf0fd885e8167c250!2ssoftware!5e0!3m2!1spt-BR!2sbr!4v1603286724488!5m2!1spt-BR!2sbr"
-         width="380" height="170" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12298.793323353902!2d-46.649933470882516!3d-23.58807667907356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59f1069d11d1%3A0xcb936109af9ce541!2sParque%20Ibirapuera!5e0!3m2!1spt-BR!2sbr!4v1603460305283!5m2!1spt-BR!2sbr" width="380" height="170" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
     </div>
 </div>
@@ -88,7 +92,7 @@
     </p>
 </footer>
        
-
+<script src="assets/js/script.js"></script>
             
         </body>
     </html>

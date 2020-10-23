@@ -22,44 +22,26 @@
         <h1 class="titulo">Cadastre-se</h1>
         <div class=" container fundo">
 
-            <div>
+            
                 <form >
-                    <label  for="name"><b>Nome Completo</b></label>
-                        <input type="text" id="label">
+                    <label  for="email"><b>Email</b></label>
+                        <input class="label" type="text" id="emailCad">
+                        <hr>
+                    <label   for="usuario"><b>Usuario</b></label>
+                        <input class="label" type="text" id="usuario" onkeyup='validaEmailCad()'>
+                        <div id = "txtEmailCad"></div>
+                        <hr>
+                    <label  for="senha"><b>Senha</b></label>
+                        <input class="label" type="password" id="senha" size="8">
                         <br>
                         <hr>
-                    <label   for="residencial"><b>Telefone Residencial</b></label>
-                        <input type="text" id="label">
-                        <br>
-                        <hr>
-                    <label  for="celular"><b>Telefone Celular</b></label>
-                        <input type="text" id="label">
-                        <br>
-                        <hr>
-                     <label  for="email"><b>Email</b></label>
-                        <input type="text" id="label">
-                        
-                        <hr>
-                    <label class=" texto"  for="sexo"><b>Sexo:</b></label>
+                     
                     
-                    <input id="radio" type="radio" name="sexo" value="M"><b>Masculino </b>
-                    <input id="radio" type="radio" name="sexo" value="F"><b>Feminino</b>
-                    <br>
-                    <hr>
-                    <b>Estado Civil:</b>
-                  <select name="estadocivil" id="estilo-select">
-                      <option class="texto" value="solteiro">Solteiro(a)</option>
-                      <option class="texto" value="casado">Casado(a)</option>
-                      <option class="texto" value="divorcido">Divorcido(a)</option>
-                      <option class="texto" value="viuvo">Viuvo(a)</option>
-                  </select>
-                  <br>
-                  <hr>
-                  <input class="btncad ml-10 mb-20" type="submit" value="Cadastrar">  
-                  <input class="botao ml-10 mb-20" type="reset" value="Limpar">
+                  <button class="btncad ml-10 mb-20" type="submit" > Cadastrar</button> 
+                  <button class="botao ml-10 mb-20" type="reset" >Limpar</button>
         
                 </form>
-            </div>
+            
 
         </div>
         
@@ -94,6 +76,6 @@
              Todos os direito reservados para: Paulo Morais &copy;
             </p>
         </footer>
-
+        <script src="assets/js/script.js"></script>
     </body>
 </html> 
