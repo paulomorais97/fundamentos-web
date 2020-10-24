@@ -34,7 +34,7 @@ body{
 
 #menu{
    
-   margin-left: 35%;
+    margin-left: 35%;
     height: auto;
     width: 25%;
     padding: 10px 10px 10px 10px ;
@@ -169,7 +169,9 @@ body{
     border-radius: 8px;
 }
 .botao{
-    width: 100%;
+    
+    margin: 5px;
+    width: 50%;
     height: 30px;
     font-size: 16px;
     border-radius: 5px;
