@@ -37,11 +37,12 @@ body{
     margin-left: 35%;
     height: auto;
     width: 25%;
-    padding: 10px 10px 10px 10px ;
+    padding: 10px ;
     text-align: center;
     border-radius: 15px;
     background-color: rgb(28, 119, 99);
     box-shadow: 2px 5px 5px  black;  
+    
    
 }
 #menu li{
@@ -75,6 +76,9 @@ body{
 .center{
     text-align: center; 
 }
+.centralizar-item{
+    align-items: center;
+}
 .justify{
     justify-content: justify;
 }
@@ -93,6 +97,8 @@ body{
     margin-bottom: 50px;
 }
 .container{
+    
+    width: 90%;
     border : 2px solid #e95a32;
     padding: 30px;
     border-radius: 9px;
@@ -103,6 +109,8 @@ body{
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
+    margin-left: 2.5%;
+    font-size: auto;
           
  }
 
@@ -117,6 +125,9 @@ body{
     width: 95%;
     height: 95%;
     padding: 30px;
+}
+.image:focus{
+    transform: translateX(10px) scale(1.2);
 }
 .video{
     width:100%;
@@ -187,4 +198,9 @@ body{
 .direct{
     text-decoration: none;
     color: white;
+
+    
+}
+.direct:hover{
+    color: rgb(215, 241, 68);
 }
