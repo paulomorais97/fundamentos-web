@@ -8,6 +8,9 @@ let senhaOk = false
 let nomeOk = false
 let emailOk = false
 
+
+
+
 usuarioCad.style.width = '100%'
 senhaCad.style.width = '100%'
 nomeCad.style.width = '100%'
@@ -77,4 +80,9 @@ function criarConta(){
     else{
         alert('Preencha os campos corretamente antes de criar a conta!')
     } 
+}
+
+
+function newPopup(){
+    let video = window.open('popup.html', 'popup')
 }
